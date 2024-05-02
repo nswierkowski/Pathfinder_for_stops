@@ -8,8 +8,8 @@ from typing import Dict, Tuple, List, Optional, Callable
 import joblib
 import pandas as pd
 
-from exercise1.dijkstra import create_road_list, create_road_list_version_b, create_road_list_with_number_of_nodes
-from .exercise1_additional_functions import connection_graph, GraphTransition, travel_between, manhattan_distance, \
+from pathfinding_algorithms.dijkstra import create_road_list, create_road_list_version_b, create_road_list_with_number_of_nodes
+from .additional_functions import connection_graph, GraphTransition, travel_between, manhattan_distance, \
     tram_speed, assert_travel_possible, difference_between_datetimes, distance_between_stops, get_random_stops, \
     generate_random_time
 from read_data.node_class import Node

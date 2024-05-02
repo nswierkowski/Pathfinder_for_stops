@@ -3,10 +3,8 @@ import numpy as np
 import pandas as pd
 
 import matplotlib
-from scipy.stats import stats
 from sklearn.neighbors import LocalOutlierFactor
 from sklearn.svm import SVR
-import statsmodels.api as sm
 matplotlib.use('agg')
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
@@ -16,7 +14,7 @@ from sklearn.preprocessing import StandardScaler, PolynomialFeatures
 
 
 def create_time_regression_model() -> None:
-    file_path = '../dijkstra_results.csv'
+    file_path = '../results/dijkstra_results.csv'
     df = pd.read_csv(file_path)
 
     df = df.dropna(subset=['Travel time'])
@@ -61,7 +59,7 @@ def create_time_regression_model() -> None:
 
 
 def create_time_regression_model_2() -> None:
-    file_path = '../dijkstra_results.csv'
+    file_path = '../results/dijkstra_results.csv'
     df = pd.read_csv(file_path)
 
     df = df.dropna(subset=['Travel time'])
@@ -97,7 +95,7 @@ def create_time_regression_model_2() -> None:
 
 
 def create_time_svr() -> None:
-    file_path = '../dijkstra_results.csv'
+    file_path = '../results/dijkstra_results.csv'
     df = pd.read_csv(file_path)
 
     df = df.dropna(subset=['Travel time'])
@@ -133,5 +131,3 @@ def create_time_svr() -> None:
 
 if __name__=="__main__":
     create_time_regression_model()
-    #create_time_regression_model_2()
-    #create_time_svr()

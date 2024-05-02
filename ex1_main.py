@@ -3,9 +3,9 @@ from datetime import datetime, timedelta
 from typing import Tuple, List, Optional
 from time import time
 
-from exercise1.a_star_by_changes_number import a_star_solution_by_changes
-from exercise1.a_star_by_time import a_star_solution
-from exercise1.dijkstra import create_road_list_version_b, create_road_list
+from pathfinding_algorithms.a_star_by_changes_number import a_star_solution_by_changes
+from pathfinding_algorithms.a_star_by_time import a_star_solution
+from pathfinding_algorithms.dijkstra import create_road_list_version_b, create_road_list
 
 
 def get_a_star_solution(start_stop: str, end_stop: str, time: datetime, time_cost: bool) -> Tuple[

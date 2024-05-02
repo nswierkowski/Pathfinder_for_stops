@@ -91,7 +91,7 @@ tram_speed: float = calculate_maximum_speed()
 distance_between_stops: float = calculate_minimum_distance_between_stops()
 lines: Dict[str, str] = calculate_line_to_stops_dict()
 
-# counted by function model_mean_error in ../additional_scripts/count_coefficent_correlation
+# counted by function model_mean_error in ../models/count_coefficent_correlation
 regression_model_changes_maximum_error = 63.90568056237911
 regression_model_changes_mean_abs_error = 7.221355444043101
 

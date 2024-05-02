@@ -8,7 +8,7 @@ from time import time as get_time
 from queue import PriorityQueue
 from typing import Dict, Tuple, List, Optional
 from read_data.read_connection_graph import Node
-from .exercise1_additional_functions import connection_graph, travel_between, calculate_travel_time, GraphTransition, \
+from .additional_functions import connection_graph, travel_between, calculate_travel_time, GraphTransition, \
     SolutionRow, difference_between_datetimes, manhattan_distance, generate_random_time, get_random_stops
 
 

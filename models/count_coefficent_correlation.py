@@ -10,7 +10,7 @@ import joblib
 
 
 def create_regression_model_for_time():
-    file_path = '../dijkstra_results.csv'
+    file_path = '../results/dijkstra_results.csv'
     df = pd.read_csv(file_path)
 
     column1 = 'Distance'
@@ -43,7 +43,7 @@ def create_regression_model_for_time():
 
 
 def create_regression_model():
-    file_path = '../dijkstra_results.csv'
+    file_path = '../results/dijkstra_results.csv'
     df = pd.read_csv(file_path)
 
     column1 = 'Distance'
@@ -101,7 +101,6 @@ def model_mean_error():
     print(f"Root Mean Squared Error: {rmse}")
     print(f"R^2 Score: {r2}")
     print(f"Max absolute error: {max_absolute_error}")
-
 
 # if __name__ == "__main__":
 #     # create_regression_model()

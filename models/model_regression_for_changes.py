@@ -14,7 +14,7 @@ from sklearn.preprocessing import StandardScaler
 
 
 def create_change_regression_model() -> None:
-    file_path = '../dijkstra_results.csv'
+    file_path = '../results/dijkstra_results.csv'
     df = pd.read_csv(file_path)
 
     data = df.values

@@ -133,7 +133,7 @@ def create_travel_time_vs_distance() -> None:
 
 
 def create_time_on_hour_buckets(bucket_size: int = 1200) -> None:
-    file_path = '../dijkstra_results.csv'
+    file_path = '../results/dijkstra_results.csv'
     df = pd.read_csv(file_path)
 
     column1 = 'Starting hour'
@@ -155,7 +155,7 @@ def create_time_on_hour_buckets(bucket_size: int = 1200) -> None:
 
 
 def create_travel_time_vs_hour() -> None:
-    file_path = '../dijkstra_results.csv'
+    file_path = '../results/dijkstra_results.csv'
     df = pd.read_csv(file_path)
 
     column1 = 'Starting hour'
@@ -176,7 +176,7 @@ def create_travel_time_vs_hour() -> None:
 
 
 def create_changes_on_hour_buckets(bucket_size: int = 5) -> None:
-    file_path = '../dijkstra_results.csv'
+    file_path = '../results/dijkstra_results.csv'
     df = pd.read_csv(file_path)
 
     column1 = 'Starting hour'
@@ -198,11 +198,11 @@ def create_changes_on_hour_buckets(bucket_size: int = 5) -> None:
 
 
 def create_result_of_time_buckets(bucket_size: int = 0.01) -> None:
-    file_path_model = '../a_star_time_results_model.csv'
+    file_path_model = '../results/a_star_time_results_model.csv'
     df_model = pd.read_csv(file_path_model)
-    file_path_speed = '../a_star_time_results_speed.csv'
+    file_path_speed = '../results/a_star_time_results_speed.csv'
     df_speed = pd.read_csv(file_path_speed)
-    file_path_mix = '../a_star_time_results_mix.csv'
+    file_path_mix = '../results/a_star_time_results_mix.csv'
     df_mix = pd.read_csv(file_path_mix)
 
     column1 = 'Distance'
@@ -229,9 +229,9 @@ def create_result_of_time_buckets(bucket_size: int = 0.01) -> None:
 
 
 def create_result_of_change_buckets(bucket_size: float=0.01) -> None:
-    file_path_model = '../a_star_time_results_model.csv'
+    file_path_model = '../results/a_star_time_results_model.csv'
     df_time = pd.read_csv(file_path_model)
-    file_path_change = '../a_star_change_results.csv'
+    file_path_change = '../results/a_star_change_results.csv'
     df_change = pd.read_csv(file_path_change)
 
     column1 = 'Distance'

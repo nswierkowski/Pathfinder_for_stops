@@ -7,9 +7,9 @@ from itertools import permutations
 from typing import List, Dict, Tuple, Set
 
 from ex1_main import get_a_star_solution
-from exercise1.a_star_by_time import a_star_solution
-from exercise1.a_star_by_changes_number import a_star_solution_by_changes
-from exercise1.exercise1_additional_functions import manhattan_distance_by_stops
+from pathfinding_algorithms.a_star_by_time import a_star_solution
+from pathfinding_algorithms.a_star_by_changes_number import a_star_solution_by_changes
+from pathfinding_algorithms.additional_functions import manhattan_distance_by_stops
 
 tabu_roads_time: Dict[str, Dict[str, Tuple[float, timedelta]]] = {}
 tabu_roads_change: Dict[str, Dict[str, Tuple[int, timedelta]]] = {}

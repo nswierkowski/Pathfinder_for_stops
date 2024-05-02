@@ -8,11 +8,11 @@ from typing import Dict, Tuple, List, Optional, Callable, Set
 import joblib
 import pandas as pd
 
-from exercise1.dijkstra import create_road_list, create_road_list_version_b, \
+from pathfinding_algorithms.dijkstra import create_road_list, create_road_list_version_b, \
     create_road_list_version_b_with_nodes_number, create_road_list_with_number_of_nodes
-from .exercise1_additional_functions import connection_graph, GraphTransition, travel_between, manhattan_distance, \
+from .additional_functions import connection_graph, GraphTransition, travel_between, manhattan_distance, \
     tram_speed, difference_between_datetimes, SolutionRow, get_random_stops, generate_random_time
-from exercise1.a_star_by_changes_number import a_star_solution_by_changes
+from pathfinding_algorithms.a_star_by_changes_number import a_star_solution_by_changes
 from read_data.node_class import Node
 
 
