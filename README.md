@@ -1,4 +1,4 @@
-## Pathfinder for stops
+## Public_Transport_Connection_Finder
 
 Implementation of pathfinding algorithms to determine the path between selected stops in Wroclaw.
 
